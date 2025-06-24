@@ -9,12 +9,12 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #fff;
-  background-color: #000; /* Cor de fundo padrão */
-  background-image: url('../imagens/logoSerra.png'); /* Logo fixa no canto */
+  background-color: #000;
+  background-image: url('../imagens/logoSerra.png');
   background-attachment: fixed;
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 100px; /* Ajuste o tamanho conforme necessário */
+  background-size: 100px;
 }
 
 /* Overlay para melhorar legibilidade (opcional) */
@@ -57,9 +57,66 @@ footer {
   background-color: #111;
 }
 
+/* ===== ESTILOS ESPECÍFICOS DO CURRÍCULO ===== */
+.curriculo {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 10px;
+  text-align: left; /* Alinhamento diferente do restante */
+}
+
+.curriculo h2 {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.curriculo ul {
+  margin-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.curriculo p {
+  margin-bottom: 0.5rem;
+}
+
+/* Link do IFES no currículo */
+.link-ifes {
+  color: #3498db;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-ifes:hover {
+  text-decoration: underline;
+}
+
+/* Botão "Voltar" no currículo */
+.botao-voltar {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.botao-voltar:hover {
+  background-color: #1a252f;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   body {
-    background-size: 80px; /* Reduz o logo em dispositivos menores */
+    background-size: 80px;
+  }
+  
+  .curriculo {
+    padding: 1rem;
+    margin: 1rem;
   }
 }
