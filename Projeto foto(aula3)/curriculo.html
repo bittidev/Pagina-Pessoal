@@ -3,50 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículo - Davi Bitti</title>
+  <title>Davi Bitti | IoT & Programação</title>
   <link rel="stylesheet" href="estilo/estilo.css">
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
     <h1>DAVI BITTI DA COSTA</h1>
-    <nav>
-      <a href="index.html" class="botao-voltar">← Voltar à Página Inicial</a>
+    <nav class="menu-principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#interesses">Interesses</a>
+      <a href="curriculo.html" class="botao-link">Currículo</a>
     </nav>
   </header>
 
-  <main class="curriculo">
-    <section class="dados-pessoais">
-      <h2>Dados Pessoais</h2>
-      <p><strong>E-mail:</strong> davi@exemplo.com</p>
-      <p><strong>Telefone:</strong> (27) 99999-9999</p>
-      <p><strong>Endereço:</strong> Serra, ES</p>
-    </section>
+  <main>
+    <article>
+      <section id="sobre">
+        <figure>
+          <img src="imagens/django.jpg" alt="Foto de Davi Bitti" class="avatar">
+        </figure>
+        <p>
+          Sou estudante de IoT e gosto de aprender coisas novas.
+        </p>
+      </section>
 
-    <section class="formacao">
-      <h2>Formação Acadêmica</h2>
-      <p>
-        <strong>Técnico em IoT</strong> - 
-        <a href="https://www.serra.ifes.edu.br/" target="_blank" rel="noopener" class="link-ifes">IFES Serra</a> (2023-2025)
-      </p>
-    </section>
+      <section id="interesses">
+        <h2>Meus interesses</h2>
+        <p>
+          Tenho interesse em programação e economia.
+        </p>
+      </section>
+    </article>
 
-    <section class="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Programação em Python e JavaScript</li>
-        <li>Desenvolvimento para Internet das Coisas (IoT)</li>
-        <li>Conhecimentos em Economia</li>
-      </ul>
-    </section>
-
-    <section class="projetos">
-      <h2>Projetos</h2>
-      <p><strong>Sistema de Monitoramento IoT</strong> - Projeto acadêmico com sensores e dashboard</p>
-    </section>
+    <aside>
+      <nav class="menu-lateral">
+        <a href="tutorial.html" class="botao-lateral">Tutoriais</a>
+        <a href="projetos.html" class="botao-lateral">Projetos</a>
+        <a href="https://github.com/bittidev?tab=repositories" target="_blank" rel="noopener noreferrer" class="botao-lateral github">
+          <i class="fab fa-github"></i> Meus Repositórios
+        </a>
+      </nav>
+    </aside>
   </main>
 
   <footer>
     <p>Desenvolvido por Davi Bitti © 2025</p>
+    <nav class="redes-sociais">
+      <a href="https://github.com/bittidev?tab=repositories" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> GitHub/bittidev
+      </a>
+    </nav>
   </footer>
 </body>
 </html>
