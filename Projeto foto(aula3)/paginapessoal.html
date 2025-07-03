@@ -3,41 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Página pessoal de Davi Bitti">
+  <meta name="description" content="Página pessoal de Davi Bitti - Estudante de IoT e Programação">
   <meta name="author" content="Davi Bitti">
-  <meta name="keywords" content="HTML, IoT, Programação, Economia">
   <title>Davi Bitti | IoT & Programação</title>
   <link rel="stylesheet" href="estilo/estilo.css">
+  <!-- Font Awesome (ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
   <header>
-    <h1>DAVI BITTI DA COSTA</h1>
-    <img src="imagens/django.jpg" alt="Foto de Davi Bitti">
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#interesses">Interesses</a>
-      <a href="curriculo.html" class="botao-link">Meu Currículo</a>
+    <div class="perfil">
+      <img src="imagens/django.jpg" alt="Foto de Davi Bitti" class="avatar">
+      <div class="info-perfil">
+        <h1>DAVI BITTI DA COSTA</h1>
+        <p class="cargo">Estudante de IoT & Desenvolvedor</p>
+      </div>
+    </div>
+    
+    <nav class="menu-principal">
+      <a href="#sobre"><i class="fas fa-user"></i> Sobre</a>
+      <a href="#interesses"><i class="fas fa-lightbulb"></i> Interesses</a>
+      <a href="curriculo.html" class="botao-link"><i class="fas fa-file-alt"></i> Currículo</a>
     </nav>
   </header>
 
-  <section id="sobre">
-    <h2>Sobre mim</h2>
-    <p>
-      Sou estudante de IoT e gosto de aprender coisas novas.
-    </p>
-  </section>
+  <main>
+    <article>
+      <section id="sobre">
+        <h2><i class="fas fa-code"></i> Sobre Mim</h2>
+        <p>Sou estudante de IoT e gosto de aprender coisas novas, especialmente na intersecção entre programação e economia.</p>
+      </section>
 
-  <section id="interesses">
-    <h2>Meus interesses</h2>
-    <p>
-      Tenho interesse em programação e economia.
-    </p>
-  </section>
+      <section id="interesses">
+        <h2><i class="fas fa-star"></i> Meus Interesses</h2>
+        <ul>
+          <li><i class="fas fa-microchip"></i> Internet das Coisas (IoT)</li>
+          <li><i class="fas fa-code"></i> Programação Python</li>
+          <li><i class="fas fa-chart-line"></i> Economia </li>
+        </ul>
+      </section>
+    </article>
+
+    <aside>
+      <nav class="menu-lateral">
+        <a href="https://github.com/bittidev?tab=repositories" target="_blank" class="botao-lateral github">
+          <i class="fab fa-github"></i> Meu GitHub
+        </a>
+        <a href="projetos.html" class="botao-lateral">
+          <i class="fas fa-project-diagram"></i> Projetos
+        </a>
+        <a href="contato.html" class="botao-lateral">
+          <i class="fas fa-envelope"></i> Contato
+        </a>
+      </nav>
+    </aside>
+  </main>
 
   <footer>
-    <p>Desenvolvido por Davi Bitti © 2025</p>
+    <div class="rodape-conteudo">
+      <p>Desenvolvido por Davi Bitti © 2025</p>
+      <nav class="redes-sociais">
+        <a href="https://github.com/bittidev?tab=repositories" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </nav>
+    </div>
   </footer>
-
 </body>
 </html>
