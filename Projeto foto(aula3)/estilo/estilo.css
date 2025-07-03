@@ -15,11 +15,9 @@ body {
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100px;
-
-  display: flex;
-  flex-direction: row;
 }
 
+/* Overlay para melhorar legibilidade (opcional) */
 body::before {
   content: "";
   position: fixed;
@@ -59,51 +57,6 @@ footer {
   background-color: #111;
 }
 
-/* ===== NOVOS ESTILOS PARA <aside> E NAV ===== */
-aside {
-  background-color: rgba(30, 30, 30, 0.9);
-  width: 200px;
-  padding: 20px;
-  height: 100vh;
-}
-
-aside nav a {
-  display: block;
-  margin-bottom: 10px;
-  padding: 10px 15px;
-  background-color: #2c3e50;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
-}
-
-aside nav a:hover {
-  transform: scale(1.05);
-  background-color: #1a252f;
-}
-
-main {
-  flex: 1;
-  padding: 20px;
-}
-
-header nav a {
-  display: inline-block;
-  margin: 5px;
-  padding: 10px 15px;
-  background-color: #2c3e50;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
-}
-
-header nav a:hover {
-  transform: scale(1.05);
-  background-color: #1a252f;
-}
-
 /* ===== ESTILOS ESPECÍFICOS DO CURRÍCULO ===== */
 .curriculo {
   max-width: 800px;
@@ -111,7 +64,7 @@ header nav a:hover {
   padding: 2rem;
   background: rgba(30, 30, 30, 0.8);
   border-radius: 10px;
-  text-align: left;
+  text-align: left; /* Alinhamento diferente do restante */
 }
 
 .curriculo h2 {
@@ -130,6 +83,7 @@ header nav a:hover {
   margin-bottom: 0.5rem;
 }
 
+/* Link do IFES no currículo */
 .link-ifes {
   color: #3498db;
   font-weight: bold;
@@ -140,6 +94,7 @@ header nav a:hover {
   text-decoration: underline;
 }
 
+/* Botão "Voltar" no currículo */
 .botao-voltar {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -157,15 +112,9 @@ header nav a:hover {
 /* Responsividade */
 @media (max-width: 768px) {
   body {
-    flex-direction: column;
     background-size: 80px;
   }
-
-  aside {
-    width: 100%;
-    height: auto;
-  }
-
+  
   .curriculo {
     padding: 1rem;
     margin: 1rem;
