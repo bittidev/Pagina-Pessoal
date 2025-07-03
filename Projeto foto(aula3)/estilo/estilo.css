@@ -64,7 +64,7 @@ footer {
   padding: 2rem;
   background: rgba(30, 30, 30, 0.8);
   border-radius: 10px;
-  text-align: left; /* Alinhamento diferente do restante */
+  text-align: left;
 }
 
 .curriculo h2 {
@@ -83,7 +83,6 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-/* Link do IFES no currículo */
 .link-ifes {
   color: #3498db;
   font-weight: bold;
@@ -94,7 +93,6 @@ footer {
   text-decoration: underline;
 }
 
-/* Botão "Voltar" no currículo */
 .botao-voltar {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -109,6 +107,47 @@ footer {
   background-color: #1a252f;
 }
 
+/* ===== ESTILOS PARA O GITHUB ===== */
+/* Botão no menu lateral */
+.botao-lateral.github {
+  background-color: #24292e; /* Preto do GitHub */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.botao-lateral.github:hover {
+  background-color: #2d3338;
+  transform: translateX(5px);
+}
+
+/* Link no footer */
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.redes-sociais a {
+  color: #3498db;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
+}
+
+.redes-sociais a:hover {
+  color: #5dade2;
+}
+
+.redes-sociais .fa-github {
+  font-size: 1.2rem;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   body {
@@ -118,5 +157,10 @@ footer {
   .curriculo {
     padding: 1rem;
     margin: 1rem;
+  }
+
+  .redes-sociais {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
